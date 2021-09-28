@@ -4,139 +4,269 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>My Resume II</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9ded2c42d.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-
-    <main class="container">
-        <section>
-            <div class="header-container">
-
-                <div class="image-container">
-                    <img class="image" src="./photo.jpg">
-                </div>
-
-                <div class="contact-container">
-                    <h1> <i> MD SOHEL RANA  </i> </h1>
-                    <h4> <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</h4>
-                </div>
+<body class="bg-gray-100">
     
+    <main class="w-full my-4">  <!-- main container default full -->
+
+        <div class="lg:w-7/12 lg:mx-auto bg-gray-200">  <!-- container for large screen 60% -->
+    
+            <section>
+                <div class="w-full"> <!-- default width full -->
+                    <div class="lg:flex lg:flex-nowrap md:flex md:flex-nowrap bg-gray-600"> <!-- in case of tab and desktop no wrap-->
+                        
+                        <div class="flex flex-row flex-wrap justify-center w-full">
+                            <div class="lg:w-40 md:w-40">
+                                <img class="w-32 h-40 m-4" src="./photo.jpg">
+                            </div>
+                        </div>
+            
+                        <div class="flex flex-row flex-wrap justify-center w-full text-white">  <!-- default flex -->
+                            <div class="lg:w-80 md:w-80 lg:flex lg:flex-col lg:justify-center md:flex md:flex-col md:justify-center">
+                                <h1 class="text-xl tracking-wide ml-0"> MD SOHEL RANA </h1>
+                                <h4 class="pb-2 ml-0"> <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <div class="bg-gray-300 my-3 py-2 px-4"> CAREER OBJECTIVE </div>
+    
+            <section>
+                <div class="p-0 pl-4"> 
+                    <p> 
+                        Having determination to learn new tools and technologies that will help me to build my career
+                        as a software engineer and to achieve a permanent position in this competitive sector.
+                  </p>
+                </div>
+            </section>
+
+            <div class="bg-gray-300 my-3 py-2 px-4"> SKILLS </div>
+    
+            <div>
+                <ul class="list-disc list-inside pl-4">
+                    <li> Programming language: C++, Java, JavaScript(basics). </li>
+                    <li> Strong competencies in algorithms and data structure. </li>
+                    <li> Clear understanding in object oriented design, RDBMS. </li>
+                    <li> Good understanding of various design patterns & principles. </li>
+                    <li> Web framework: Spring Boot, Django. </li>
+                    <li> Database: MySQL, Postgresql, MongoDB, Redis. </li>
+                </ul>
             </div>
-        </section>
 
-        <div class="content-header"> CAREER OBJECTIVE </div>
+            <div class="bg-gray-300 my-3 py-2 px-4"> EXPERIENCE </div>
+    
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default flex-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default width-->
 
-        <section>
-            <div class="career-objective"> 
-                <p> 
-                    Having determination to learn new tools and technologies that will help me to build my career
-                    as a software engineer and to achieve a permanent position in this competitive sector.
-              </p>
-            </div>
-        </section>
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap"> <!-- for large and medium screen-->
+                            <div class="lg:w-1/2 md:w-1/2"> <!-- for large and medium screen-->
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>Associate Software Engineer</strong> </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> Neural Semiconductor Limited </strong> <br>
+                                        <i> Sept 2020 - Aug 2021 </i>
+                                        <ol class="list-disc ml-5">
+                                            <li> I was working here mostly in java-based backend development. [Spring Boot, Hibernate]. </li>
+                                            <li> Worked as a part of team developing HRM ERP.</li>
+                                            <li> Also developed and provided support for APIs consumed by other teams. </li>
+                                            <li> Ensured quality of the application by providing testing support.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
 
-        <div class="content-header"> SKILLS </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
 
-        <div>
-            <ul class="list-item">
-                <li> Programming language: C++, Java, JavaScript(basics). </li>
-                <li> Strong competencies in algorithms and data structure. </li>
-                <li> Clear understanding in object oriented design, RDBMS. </li>
-                <li> Good understanding of various design patterns & principles. </li>
-                <li> Web framework: Spring Boot, Django. </li>
-                <li> Database: MySQL, Postgresql, MongoDB, Redis. </li>
-            </ul>
+            <div class="bg-gray-300 my-3 py-2 px-4"> PROJECTS </div>
+
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default small screen-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default small screen-->
+
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap">
+                            <div class="lg:w-1/2 md:w-1/2">
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>TAFURI HRMS</strong> <br>
+                                        </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> TAFURI ENTERPRISE RESOURCE PLANNING </strong> <br>
+                                        This ERP is developed using Java Spring Boot REST framework. UI is developed by
+                                        React js. Used Postgres server for backend database. Attendance, Leave, Promotion,
+                                        Separation, Payroll are the main features of this ERP.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mb-2"> </div>
+
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default small screen-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default small screen-->
+
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap">
+                            <div class="lg:w-1/2 md:w-1/2">
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>Analog & RT Calcuator</strong> </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> Big Data Query & Plotting </strong> <br>
+                                        This project was contracted by Global Foundries. This project has done using
+                                        Java Spring Boot REST Framework and UI has made with Vue js. Data is fetched from parquet file
+                                        which is stored in AWS.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <div class="mb-2"> </div>
+
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default small screen-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default small screen-->
+
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap">
+                            <div class="lg:w-1/2 md:w-1/2">
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>Online Judge</strong> </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> Online Programming Practicing Platform </strong> <br>
+                                        System is developed on Java Spring Boot MVC. Thyemleaf is used for UI.
+                                        This is an on going presonal project.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+
+            <div class="bg-gray-300 my-3 py-2 px-4"> EDUCATION </div>
+
+
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default small screen-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default small screen-->
+
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap">
+                            <div class="lg:w-1/2 md:w-1/2">
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>BSc in CSE</strong> <br> </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> Hajee Mohammad Danesh Science & Technology University </strong> <br>
+                                        <i> Duration : Feb 2016 - March 2021  CGPA : 3.24 </i>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mb-2"> </div>
+
+            <section>
+                <div class="flex flex-row flex-wrap ">  <!-- default small screen-->
+                    <div class="w-full m-0 py-0 px-4">  <!-- default small screen-->
+
+                        <div class="lg:flex lg:flex-row lg:flex-nowrap md:flex md:flex-row md:flex-nowrap">
+                            <div class="lg:w-1/2 md:w-1/2">
+                                <ul class="list-disc ml-4">
+                                    <li> 
+                                        <p> <strong>Higher Secondary (HSC)</strong> </p>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="w-full m-0 py-0 px-4"> 
+                                <div class="lg:auto md:auto">
+                                    <p> <strong> Nawabgonj Govt College </strong> <br>
+                                        <i> Duration : 2013 - 2015 GPA : 5.00 </i>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+    
+           <div class="bg-gray-300 my-3 py-2 px-4"> EXTRACURRICULAR ACTIVITIES </div>
+    
+            <div mx-4>
+                <ul class="list-disc list-inside pl-4">
+                    <li> Solved about 700+ [CF BlueEye, UVa 839014, LOJ 37742] problems in several OJ. </li>
+                    <li> Participated in National Collegiate Programming Contest 2018 & 2020.</li>
+                    <li> 
+                        Joint Secretary(2018- 2019) at “Programmers Arena” of HSTU. Responsible for
+                        <ol class="list-disc list-inside pl-4" style="list-style-type: upper-roman;">  <!-- just change the default -->
+                            <li> Arranging Intra University programming contests. </li>
+                            <li> Conducting workshops on competitive programming at HSTU </li>
+                        </ol>  
+                    </li>
+                    <div style="padding-bottom: 50px;"></div> </div>  <!-- for extra space -->
+                </ul>
+
+            </div> 
+        
         </div>
 
-        <div class="content-header"> EXPERIENCE </div>
+    </main>
 
-        <section>
-            <div class="container-text-text">
-                <div class="item title">
-                    <ul class="list-square">
-                        <li> 
-                            <p> <strong>Associate Software Engineer</strong> <br>
-                                <i> Sept 2020 - Aug 2021 </i>
-                            </p>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="item description"> 
-                    <p> <strong> Neural Semiconductor Limited </strong>
-                        <ol class="role">
-                            <li> I was working here mostly in java-based backend development. [Spring Boot, Hibernate]. </li>
-                            <li> Worked as a part of team developing HRM ERP.</li>
-                            <li> Also developed and provided support for APIs consumed by other teams. </li>
-                            <li> Ensured quality of the application by providing testing support.</li>
-                        </ol>
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <div class="content-header"> EDUCATION </div>
-
-        <section>
-             <div class="container-text-text">
-
-                <div class="item title"> 
-                    <ul class="list-square">
-                        <li> 
-                            <p> <strong>BSc in CSE</strong> <br>
-                                <i> Feb 2016 - March 2021 </i>
-                            </p>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="item description"> 
-                    <p class="extra"> <strong> Hajee Mohammad Danesh Science & Technology University </strong> <br>
-                        CGPA : 3.24
-                    </p>
-                </div>
-
-                <div class="item title"> 
-                    <ul class="list-square" style="margin:0" >
-                        <li> 
-                            <p style="margin-top: 0;"> <strong>Higher Secondary Certificate</strong> <br>
-                                <i> 2013 - 2015 </i>
-                            </p>
-                        </li>
-                    </ul> 
-                </div>
-                <div  class="item description"> 
-                    <p style="margin: 0;"> <strong> Nawabgonj Govt College </strong> <br>
-                        GPA : 5.00
-                    </p>
-                </div>
-             </div>
-        </section>
-
-        <div class="content-header"> EXTRACURRICULAR ACTIVITIES </div>
-
-        <div>
-            <ul class="list-item">
-                <li> Solved about 700+ [CF <i> BlueEye </i>, UVa 839014, LOJ 37742] problems in several OJ. </li>
-                <li> Participated in National Collegiate Programming Contest 2018 & 2020.</li>
-                <li> 
-                    Joint Secretary(2018- 2019) at “Programmers Arena” of HSTU. Responsible for
-                    <ol style="list-style-type: upper-roman;">  <!-- just change the default -->
-                        <li> Arranging Intra University programming contests. </li>
-                        <li> Conducting workshops on competitive programming at HSTU </li>
-                    </ol>  
-                </li>
-                <div style="padding-bottom: 50px;"></div> </div>  <!-- for extra space -->
-            </ul>
-            
-        </div> 
-
-    </main>   
-
-    
-    
 </body>
 </html>
+
+
