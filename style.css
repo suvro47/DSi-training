@@ -1,0 +1,136 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin:auto;
+    background-color: #f2f2f2;
+}
+
+.header-container{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #4d4d4d;
+}
+
+.image-container{
+    display: flex;
+    min-width: 5rem;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20rem;
+    box-sizing: border-box;
+}
+
+.image{
+    height: 150px;
+    width: 120px;
+}
+
+.contact-container h1{
+    color: #fff;
+    font-weight: 400px;
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;  
+}
+
+.contact-container h4{
+    margin-top: 0;
+    color: #fff;
+}
+
+.content-header{
+    background-color:#d9d9d9;
+    padding: 10px 0 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.career-objective{
+    padding: 0 0 0 20px;
+}
+
+.container-text-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    box-sizing: border-box;
+}
+
+.title{
+   width: 40%;
+   margin:0;
+   padding: 0 20px 0 20px;
+}
+
+.description{
+    width: 60%;
+    margin:0;
+    padding: 0 20px 0 20px;
+}
+
+.role{
+    margin:0;
+    padding-left: 18px;
+    list-style: circle;
+}
+
+.list-square{
+    padding-left: 20px; 
+    list-style: square;
+}
+
+@media screen and (max-width: 750px)  {
+    .container{
+        width: 100%;
+    }
+    .image-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-container{
+        width: 100%;
+        align-items: center;
+    }
+    .title{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+    .extra{
+        margin-top:0;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
